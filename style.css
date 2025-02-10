@@ -106,6 +106,51 @@ nav .right a:last-child span{
     width: 400px;
 }
 
+/* About-Section */
+.about-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.about-section h2{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.about-section .text{
+    text-align: center;
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    padding: 25px 25px;
+    box-shadow: 2px 2px 2px rgb(150, 149, 149);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.about-section .text:hover{
+    border: 2px solid rgb(212, 212, 212);
+    transform: scale(1.025);
+}
+
+.about-section .text .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+
+.about-section .text .links{
+    margin-top: 20px;
+}
+
+.about-section .text .links a:hover{
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+}
+
 /* Skills-Section */
 
 .skills-section{
@@ -116,17 +161,25 @@ nav .right a:last-child span{
 .skills-section h2{
     text-align: center;
     font-size: 35px;
-}
-
-.skills-section .text{
-    text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .skills-section .cells{
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    padding: 25px 25px;
+    box-shadow: 2px 2px 2px rgb(150, 149, 149);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.skills-section .cells:hover{
+    border: 2px solid rgb(212, 212, 212);
+    transform: scale(1.025);
 }
 
 .skills-section .cells .cell{
@@ -159,6 +212,7 @@ nav .right a:last-child span{
 .testimony-section h2{
     text-align: center;
     font-size: 35px;
+    margin-bottom: 20px;
 }
 
 .testimony-section .group{
@@ -174,12 +228,29 @@ nav .right a:last-child span{
 
 .testimony-section .group .text{
     flex: 8;
+    font-style: italic;
+    font-family: "Georgia", sans-serif;
+    font-size: 17px;
+}
+
+.testimony-section .group{
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    padding: 25px 25px;
+    box-shadow: 2px 2px 2px rgb(150, 149, 149);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimony-section .group:hover{
+    border: 2px solid rgb(212, 212, 212);
+    transform: scale(1.025);
 }
 
 .testimony-section .group .headshot img{
     border-radius: 50%;
-    width: 180px;
+    width: 130px;
     margin-bottom: 10px;
 }
 
@@ -272,6 +343,10 @@ nav .right a:last-child span{
 }
 
 @media (max-width: 600px) {
+
+    .about-section{
+        padding: 0 20px;
+    }
 
     .contact-section{
         padding: 0 20px;
