@@ -64,6 +64,10 @@ nav .right a:last-child span{
     margin: 3px;
 }
 
+nav .right a:hover{
+    color: #ff7b54;
+}
+
 /* Hero-Section */
 .hero-section{
     display: flex;
@@ -421,17 +425,17 @@ footer {
     background-color: #1a1a1a;
     color: #ffffff;
     padding: 20px 0;
-    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1); /* Box shadow for effect */
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.footer-links {
+.footer-section .contacts {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.footer-links a {
+.footer-section .contacts a {
     display: flex;
     align-items: center;
     color: #ffffff;
@@ -439,13 +443,13 @@ footer {
     transition: color 0.3s ease;
 }
 
-.footer-links i {
-    margin-right: 8px;
+.footer-section .contacts i {
+    margin-right: 5px;
     font-size: 16px;
 }
 
-.footer-links a:hover {
-    color: #ff7b54; /* Change color on hover */
+.footer-section .contacts a:hover {
+    color: #ff7b54;
 }
 
 
