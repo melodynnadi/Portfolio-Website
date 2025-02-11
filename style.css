@@ -202,6 +202,44 @@ nav .right a:last-child span{
     margin-right: 5px;
 }
 
+/* Education-Section */
+.education-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.education-section h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.education-section .group .school h3{
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: -20px;
+}
+
+.education-section .group{
+    text-align: center;
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    padding: 25px 25px;
+    box-shadow: 2px 2px 2px rgb(150, 149, 149);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.education-section .group .school img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.education-section .group:hover{
+    border: 2px solid rgb(212, 212, 212);
+    transform: scale(1.025);
+}
+
 /* Testimony-Section */
 
 .testimony-section{
@@ -216,7 +254,7 @@ nav .right a:last-child span{
 }
 
 .testimony-section .group{
-    display: flex;
+    display: column;
     align-items: center;
     gap: 40px;
 }
@@ -224,6 +262,16 @@ nav .right a:last-child span{
 .testimony-section .group .headshot{
     flex: 2;
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimony-section .boxes .group{
+    flex: 5;
+    margin-right: 20px;
+}
+
+.testimony-section .boxes{
+    display: flex;
 }
 
 .testimony-section .group .text{
@@ -258,8 +306,24 @@ nav .right a:last-child span{
     font-weight: bold;
 }
 
-.testimony-section .group .headshot span:last-child{
+.testimony-section .group .headshot span:last-of-type{
     font-weight: normal;
+}
+
+.testimony-section .group .headshot a{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+
+.testimony-section .group .headshot a:hover{
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
 }
 
 /* Contact-Section */
@@ -328,6 +392,10 @@ nav .right a:last-child span{
         font-size: 35px;
     }
 
+    .testimony-section .boxes{
+        flex-direction: column;
+    }
+
     .hero-section .headshot img{
         width: 300px;
     }
@@ -343,6 +411,10 @@ nav .right a:last-child span{
 }
 
 @media (max-width: 600px) {
+
+    .education-section{
+        padding: 0 20px;
+    }
 
     .about-section{
         padding: 0 20px;
