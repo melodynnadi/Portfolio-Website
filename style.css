@@ -26,13 +26,20 @@ a{
 }
 
 /* NAVBAR */
+
+header {
+    background-color: #f8f9fa; /* Light background */
+    padding: 0px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow below header */
+    margin-bottom: 50px;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
     padding: 0 50px;
     height: 80px;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 nav .left a{
@@ -202,6 +209,36 @@ nav .right a:last-child span{
     margin-right: 5px;
 }
 
+/* Resume-Section */
+
+.resume-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.resume-section h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.resume-section .resume{
+    text-align: center;
+}
+
+.resume-section .resume img{
+    width: 700px;
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(150, 149, 149);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.resume-section .resume img:hover{
+    border: 2px solid rgb(212, 212, 212);
+    transform: scale(1.05);
+}
+
 /* Education-Section */
 .education-section{
     padding: 0 50px;
@@ -277,7 +314,7 @@ nav .right a:last-child span{
 .testimony-section .group .text{
     flex: 8;
     font-style: italic;
-    font-family: "Georgia", sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 17px;
 }
 
@@ -379,6 +416,39 @@ nav .right a:last-child span{
     background-color: #0532af;
 }
 
+/* Footer-Section */
+footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1); /* Box shadow for effect */
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links i {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    color: #ff7b54; /* Change color on hover */
+}
+
+
 @media (max-width: 850px){
 
     .hero-section .text h2{
@@ -387,6 +457,10 @@ nav .right a:last-child span{
 }
 
 @media (max-width: 740px){
+
+    .resume-section .resume img{
+        width: 500px;
+    }
 
     .hero-section .text h2{
         font-size: 35px;
@@ -411,6 +485,14 @@ nav .right a:last-child span{
 }
 
 @media (max-width: 600px) {
+
+    .resume-section{
+        padding: 0 20px;
+    }
+
+    .resume-section .resume img{
+        width: 350px;
+    }
 
     .education-section{
         padding: 0 20px;
