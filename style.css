@@ -12,6 +12,7 @@
 
 html{
     scroll-behavior: smooth;
+    scroll-padding: 10px;
 }
 
 body{
@@ -119,7 +120,7 @@ nav .right a:hover{
 
 /* About-Section */
 .about-section{
-    padding: 0 50px;
+    padding: 0 200px;
     margin-bottom: 100px;
 }
 
@@ -165,7 +166,7 @@ nav .right a:hover{
 /* Skills-Section */
 
 .skills-section{
-    padding: 0 50px;
+    padding: 0 200px;
     margin-bottom: 100px;
 }
 
@@ -245,7 +246,7 @@ nav .right a:hover{
 
 /* Education-Section */
 .education-section{
-    padding: 0 50px;
+    padding: 0 200px;
     margin-bottom: 100px;
 }
 
@@ -370,8 +371,8 @@ nav .right a:hover{
 /* Contact-Section */
 
 .contact-section{
-    padding: 0 50px;
-    margin-bottom: 100px;
+    padding: 0 350px;
+    margin-bottom: 50px;
 }
 
 .contact-section h2{
@@ -383,10 +384,21 @@ nav .right a:hover{
 .contact-section .group{
     display: flex;
     gap: 40px;
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    padding: 25px 25px;
+    box-shadow: 2px 2px 2px rgb(150, 149, 149);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
 }
 
 .contact-section .group .text{
     flex: 3;
+}
+
+.contact-section .group label{
+    font-weight: bolder;
+    font-size: large;
 }
 
 .contact-section .group form{
@@ -421,7 +433,7 @@ nav .right a:hover{
 }
 
 /* Footer-Section */
-footer {
+.footer-section {
     background-color: #1a1a1a;
     color: #ffffff;
     padding: 20px 0;
@@ -455,12 +467,37 @@ footer {
 
 @media (max-width: 850px){
 
+    .education-section{
+        padding: 0 100px;
+        margin-bottom: 100px;
+    }
+
     .hero-section .text h2{
         font-size: 35px;
     }
 }
 
 @media (max-width: 740px){
+
+    .footer-section .contacts{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2px;
+    }
+
+    .education-section{
+        padding: 0 50px;
+        margin-bottom: 100px;
+    }
+
+    .footer-section .contact a{
+        margin-bottom: 1px;
+    }
+
+    .footer-section .contacts #descriptions{
+        display: none;
+    }
 
     .resume-section .resume img{
         width: 500px;
