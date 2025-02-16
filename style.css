@@ -29,11 +29,12 @@ a{
 /* NAVBAR */
 
 header {
-    background-color: #f8f9fa; /* Light background */
+    background-color: #1a1a1a;
     padding: 0px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow below header */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
     margin-bottom: 50px;
 }
+
 
 nav{
     display: flex;
@@ -44,19 +45,19 @@ nav{
 }
 
 nav .left a{
-    color: var(--text-color);
+    color: var(--background-color);
     font-weight: 600;
     font-size: 22px;
 }
 
 nav .right a{
-    color: var(--text-color);
     margin: 0 8px;
+    color: var(--background-color);
 }
 
 nav .right a:last-child{
     color: var(--background-color);
-    background-color: var(--text-color);
+    background-color: var(--link-color);
     padding: 5px 15px;
     border-radius: 5px;
 }
@@ -82,6 +83,10 @@ nav .right a:hover{
 
 .hero-section .text{
     flex: 5;
+}
+
+.hero-section .text p{
+    font-size: 18px;
 }
 
 .hero-section .text h2{
@@ -120,27 +125,26 @@ nav .right a:hover{
 
 /* About-Section */
 .about-section{
-    padding: 0 200px;
+    padding: 0 250px;
     margin-bottom: 100px;
 }
 
 .about-section h2{
-    margin-bottom: 10px;
     text-align: center;
     font-size: 35px;
 }
 
 .about-section .text{
     text-align: center;
-    border: 2px solid rgb(212, 212, 212);
+    border: 0px solid rgb(212, 212, 212);
     border-radius: 5px;
+    font-size: 18px;
     padding: 25px 25px;
-    box-shadow: 2px 2px 2px rgb(150, 149, 149);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .about-section .text:hover{
-    border: 2px solid rgb(212, 212, 212);
+    border: 0px solid rgb(212, 212, 212);
     transform: scale(1.025);
 }
 
@@ -177,10 +181,9 @@ nav .right a:hover{
 }
 
 .skills-section .cells{
-    border: 2px solid rgb(212, 212, 212);
+    border: 0px solid rgb(212, 212, 212);
     border-radius: 5px;
     padding: 25px 25px;
-    box-shadow: 2px 2px 2px rgb(150, 149, 149);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     text-align: center;
     margin-bottom: 20px;
@@ -189,9 +192,9 @@ nav .right a:hover{
     flex-wrap: wrap;
 }
 
-.skills-section .cells:hover{
-    border: 2px solid rgb(212, 212, 212);
-    transform: scale(1.025);
+.skills-section .cells .cell:hover{
+    border: 0px solid rgb(212, 212, 212);
+    transform: scale(1.4);
 }
 
 .skills-section .cells .cell{
@@ -201,15 +204,16 @@ nav .right a:hover{
 
     width: 200px;
     padding: 10px 20px;
-    border: 1.5px solid rgb(169, 169, 169);
+    border: 0px solid rgb(169, 169, 169);
     border-radius: 5px;
     margin-right: 10px;
     margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .skills-section .cells .cell img{
-    width: 30px;
-    height: 30px;
+    width: 100px;
+    height: 100px;
     border-radius: 5px;
     margin-right: 5px;
 }
@@ -437,7 +441,7 @@ nav .right a:hover{
     background-color: #1a1a1a;
     color: #ffffff;
     padding: 20px 0;
-    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px -6px 15px rgba(0, 0, 0, 0.4); /* Shadow at the top of the footer */
     text-align: center;
 }
 
@@ -470,6 +474,42 @@ nav .right a:hover{
     .education-section{
         padding: 0 100px;
         margin-bottom: 100px;
+    }
+
+    .about-section{
+        padding: 0 50px;
+    }
+
+    .skills-section{
+        padding: 0 50px;
+    }
+
+    .contact-section{
+        padding: 0 50px
+    }
+
+    .hero-section .text h2{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1100px){
+
+    .education-section{
+        padding: 0 100px;
+        margin-bottom: 100px;
+    }
+
+    .about-section{
+        padding: 0 50px;
+    }
+
+    .skills-section{
+        padding: 0 50px;
+    }
+
+    .contact-section{
+        padding: 0 30px
     }
 
     .hero-section .text h2{
