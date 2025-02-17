@@ -220,7 +220,7 @@ nav .right a:hover{
 
 /* Projects-Section */
 .project-section{
-    padding: 0 50px;
+    padding: 0 100px;
     margin-bottom: 100px;
 }
 
@@ -232,18 +232,25 @@ nav .right a:hover{
 
 .project-section .group{
     display: column;
-    align-items: center;
     gap: 40px;
 }
 
 .project-section .group .headshot{
     flex: 2;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .project-section .group .headshot span{
     font-weight: bold;
     font-size: 23px;
+    padding: 0 25px;
+    margin-right: 0px;
+}
+
+.project-section .group .headshot span:last-child{
+    font-weight: normal;
+    font-size: 18px;
+    padding: 0 0;
 }
 
 .project-section .boxes .group{
@@ -258,16 +265,27 @@ nav .right a:hover{
 .project-section .group .text{
     flex: 8;
     font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 5px;
 }
 
 .project-section .group .text ul{
     margin-left: 17px;
 }
 
+.project-section .group .headshot a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+
 .project-section .group{
     border: 2px solid rgb(212, 212, 212);
     border-radius: 5px;
-    padding: 25px 25px;
+
     box-shadow: 2px 2px 2px rgb(150, 149, 149);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     margin-bottom: 20px;
@@ -278,23 +296,15 @@ nav .right a:hover{
     transform: scale(1.025);
 }
 
-.project-section .group .headshot img{
+.project-section .group .headshot img {
     border-radius: 5px;
     text-align: center;
-    width: 600px;
-    height: 300px;
-    margin-bottom: 10px;
-}
-
-.project-section .group .text a{
-    margin-top: 10px;
-    display: inline-block;
-    padding: 5px 10px;
-    border: 2px solid var(--link-color);
-    border-radius: 5px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    transition: .1s;
+    width: 100%; 
+    max-width: 100%; 
+    object-fit: cover; 
+    height: auto; 
+    display: block; 
+    margin: auto;
 }
 
 .project-section .group a:hover{
@@ -373,7 +383,7 @@ nav .right a:hover{
 /* Testimony-Section */
 
 .testimony-section{
-    padding: 0 50px;
+    padding: 0 100px;
     margin-bottom: 100px;
 }
 
@@ -556,8 +566,25 @@ nav .right a:hover{
 @media (max-width: 850px){
 
     .education-section{
-        padding: 0 100px;
+        padding: 0 50px;
         margin-bottom: 100px;
+    }
+
+    .project-section{
+        padding: 0 20px;
+    }
+
+    .project-section .boxes {
+        flex-direction: column;
+    }
+
+    .project-section .group {
+        width: 100%; 
+        max-width: 600px;
+    }
+
+    .project-section .group .headshot img{
+        text-align: center; 
     }
 
     .about-section{
@@ -569,7 +596,7 @@ nav .right a:hover{
     }
 
     .contact-section{
-        padding: 0 50px
+        padding: 0 50px;
     }
 
     .hero-section .text h2{
@@ -593,7 +620,7 @@ nav .right a:hover{
     }
 
     .contact-section{
-        padding: 0 30px
+        padding: 0 30px;
     }
 
     .hero-section .text h2{
@@ -639,13 +666,18 @@ nav .right a:hover{
         width: 300px;
     }
 
-
     .hero-section{
         flex-direction: column-reverse;
     }
 
     .testimony-section .group{
         flex-direction: column;
+    }
+}
+
+@media (max-width: 650px){
+    .project-section .group .headshot a{
+        margin-left: 25px;
     }
 }
 
