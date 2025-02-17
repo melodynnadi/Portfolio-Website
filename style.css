@@ -225,9 +225,9 @@ nav .right a:hover{
 }
 
 .project-section h2{
-    text-align: center;
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .project-section .group{
@@ -238,8 +238,12 @@ nav .right a:hover{
 
 .project-section .group .headshot{
     flex: 2;
-    text-align: center;
     margin-bottom: 20px;
+}
+
+.project-section .group .headshot span{
+    font-weight: bold;
+    font-size: 23px;
 }
 
 .project-section .boxes .group{
@@ -253,9 +257,11 @@ nav .right a:hover{
 
 .project-section .group .text{
     flex: 8;
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 17px;
+}
+
+.project-section .group .text ul{
+    margin-left: 17px;
 }
 
 .project-section .group{
@@ -264,7 +270,6 @@ nav .right a:hover{
     padding: 25px 25px;
     box-shadow: 2px 2px 2px rgb(150, 149, 149);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -275,20 +280,13 @@ nav .right a:hover{
 
 .project-section .group .headshot img{
     border-radius: 5px;
+    text-align: center;
     width: 600px;
     height: 300px;
     margin-bottom: 10px;
 }
 
-.project-section .group .headshot span{
-    font-weight: bold;
-}
-
-.project-section .group .headshot span:last-of-type{
-    font-weight: normal;
-}
-
-.project-section .group .headshot a{
+.project-section .group .text a{
     margin-top: 10px;
     display: inline-block;
     padding: 5px 10px;
@@ -299,7 +297,7 @@ nav .right a:hover{
     transition: .1s;
 }
 
-.project-section .group .headshot a:hover{
+.project-section .group a:hover{
     border: 2px solid var(--text-color);
     color: var(--text-color);
 }
