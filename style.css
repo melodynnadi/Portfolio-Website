@@ -244,7 +244,7 @@ nav .right a:hover{
     font-weight: bold;
     font-size: 23px;
     padding: 0 25px;
-    margin-right: 0px;
+    margin-right: 25px;
 }
 
 .project-section .group .headshot span:last-child{
@@ -275,11 +275,12 @@ nav .right a:hover{
 
 .project-section .group .headshot a{
     display: inline-block;
-    padding: 5px 10px;
+    padding: 5px 5px;
     border: 2px solid var(--link-color);
     border-radius: 5px;
     margin-bottom: 10px;
     transition: .1s;
+    margin-left: 25px;
 }
 
 .project-section .group{
