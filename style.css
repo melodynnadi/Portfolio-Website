@@ -218,6 +218,92 @@ nav .right a:hover{
     margin-right: 5px;
 }
 
+/* Projects-Section */
+.project-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.project-section h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.project-section .group{
+    display: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.project-section .group .headshot{
+    flex: 2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-section .boxes .group{
+    flex: 5;
+    margin-right: 20px;
+}
+
+.project-section .boxes{
+    display: flex;
+}
+
+.project-section .group .text{
+    flex: 8;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+.project-section .group{
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    padding: 25px 25px;
+    box-shadow: 2px 2px 2px rgb(150, 149, 149);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-section .group:hover{
+    border: 2px solid rgb(212, 212, 212);
+    transform: scale(1.025);
+}
+
+.project-section .group .headshot img{
+    border-radius: 5px;
+    width: 600px;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.project-section .group .headshot span{
+    font-weight: bold;
+}
+
+.project-section .group .headshot span:last-of-type{
+    font-weight: normal;
+}
+
+.project-section .group .headshot a{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+
+.project-section .group .headshot a:hover{
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+}
+
 /* Resume-Section */
 
 .resume-section{
