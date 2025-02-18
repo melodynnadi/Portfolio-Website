@@ -246,6 +246,7 @@ nav .right a:hover{
     font-size: 23px;
     padding: 0 25px;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .project-section .group .headshot span:last-child{
@@ -253,6 +254,7 @@ nav .right a:hover{
     font-size: 18px;
     padding: 0 0;
     margin-right: 0px;
+    margin-bottom: 0px;
 }
 
 .project-section .boxes .group{
