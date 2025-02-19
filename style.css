@@ -255,6 +255,7 @@ nav .right a:hover{
     padding: 0 0;
     margin-right: 0px;
     margin-bottom: 0px;
+    text-align: center;
 }
 
 .project-section .boxes .group{
@@ -271,10 +272,6 @@ nav .right a:hover{
     font-size: 17px;
     padding: 0 25px;
     margin-bottom: 5px;
-}
-
-.project-section .group .text ol{
-    margin-left: 17px;
 }
 
 .project-section .group .headshot a{
@@ -682,6 +679,10 @@ nav .right a:hover{
 @media (max-width: 650px){
     .project-section .group .headshot a{
         margin-left: 25px;
+    }
+
+    .project-section .group .headshot span{
+        padding: 0 0;;
     }
 }
 
