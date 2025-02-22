@@ -76,7 +76,7 @@ nav .right a:hover{
     justify-content: space-between;
     align-items: center;
     margin: 50px o;
-    padding: 0 50px;
+    padding: 0 80px;
     margin-bottom: 100px;
     gap: 40px;
 }
@@ -171,7 +171,7 @@ nav .right a:hover{
 
 .skills-section{
     padding: 0 200px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .skills-section h2{
@@ -216,6 +216,74 @@ nav .right a:hover{
     height: 100px;
     border-radius: 5px;
     margin-right: 5px;
+}
+
+/* Experience-Section */
+.experience-section{
+	width: 100%;
+	padding: 35px 10%;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px;
+    padding-right: calc(10% - 30px);
+    margin-bottom: 50px;
+}
+
+.experience-section h2{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.experience-section .contents{
+	padding: 0px 30px;
+	border-left: 2px solid #bababa;
+}
+.experience-section .contents .box{
+	position: relative;
+	padding: 20px;
+	border: 1px solid #eaeaea;
+	background-color: #ffffff;
+	cursor: pointer;
+	transition: all 0.4s;
+	margin-bottom: 20px;
+    border-radius: 5px;
+}
+.experience-section .contents .box:hover{
+	box-shadow: 0px 3px 12px 0px #ccc;
+	border: 1px solid transparent;
+}
+.experience-section .contents .box::before{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	right: calc(100% + 22px);
+	top: 0;
+	background-color: var(--link-color);
+	border: 2px solid white;
+}
+.experience-section .box h4{
+	position: relative;
+	color: var(--text-color);
+}
+
+.experience-section .box h3{
+	font-size: 19px;
+	padding: 10px 0px 6px;
+    margin-bottom: -10px;
+	color: var(--text-color);
+}
+
+.experience-section .box span{
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.experience-section .box dl{
+	line-height: 1.2;
+	color: var(--text-color);
+	font-size: 17px;
 }
 
 /* Projects-Section */
@@ -470,7 +538,7 @@ nav .right a:hover{
 /* Contact-Section */
 
 .contact-section{
-    padding: 0 350px;
+    padding: 0 400px;
     margin-bottom: 50px;
 }
 
@@ -563,6 +631,14 @@ nav .right a:hover{
     color: #ff7b54;
 }
 
+@media(max-width: 768px){
+	main.row{
+		grid-template-columns: 1fr;
+	}
+	.row .col:nth-child(2){
+		margin-top: 30px;
+	}
+}
 
 @media (max-width: 850px){
 
@@ -572,7 +648,7 @@ nav .right a:hover{
     }
 
     .project-section{
-        padding: 0 20px;
+        padding: 0 50px;
     }
 
     .project-section .boxes {
@@ -597,7 +673,7 @@ nav .right a:hover{
     }
 
     .contact-section{
-        padding: 0 50px;
+        padding: 0 80px;
     }
 
     .hero-section .text h2{
@@ -605,7 +681,13 @@ nav .right a:hover{
     }
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1000px){
+    .project-section .boxes {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1200px){
 
     .education-section{
         padding: 0 100px;
@@ -621,7 +703,7 @@ nav .right a:hover{
     }
 
     .contact-section{
-        padding: 0 30px;
+        padding: 0 250px;
     }
 
     .hero-section .text h2{
@@ -636,6 +718,10 @@ nav .right a:hover{
         align-items: center;
         text-align: center;
         gap: 2px;
+    }
+
+    .contact-section{
+        padding: 0 100px;
     }
 
     .education-section{
