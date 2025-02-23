@@ -241,18 +241,17 @@ nav .right a:hover{
 .experience-section .contents .box{
 	position: relative;
 	padding: 20px;
-	border: 1px solid #eaeaea;
-	background-color: #ffffff;
+	background-color: var(--background-color);
 	cursor: pointer;
-	transition: all 0.4s;
 	margin-bottom: 20px;
     border-radius: 5px;
 }
 .experience-section .contents .box:hover{
-	box-shadow: 0px 3px 12px 0px #ccc;
-	border: 1px solid transparent;
+	border: 2px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(150, 149, 149);
 }
-.experience-section .contents .box::before{
+.experience-section .contents .box span::before{
 	content: '';
 	position: absolute;
 	width: 16px;
@@ -262,6 +261,7 @@ nav .right a:hover{
 	top: 0;
 	background-color: var(--link-color);
 	border: 2px solid white;
+    margin-top: 80px;
 }
 .experience-section .box h4{
 	position: relative;
@@ -276,14 +276,20 @@ nav .right a:hover{
 }
 
 .experience-section .box span{
-    margin-bottom: 20px;
+    padding: 0px 0px 20px;
     font-style: italic;
 }
 
 .experience-section .box dl{
 	line-height: 1.2;
 	color: var(--text-color);
-	font-size: 17px;
+	font-size: 15px;
+}
+
+.experience-section .box p{
+	line-height: 1.2;
+	color: var(--text-color);
+	font-size: 15px;
 }
 
 /* Projects-Section */
@@ -301,29 +307,25 @@ nav .right a:hover{
 .project-section .group{
     display: column;
     gap: 40px;
-    text-align: center;
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(150, 149, 149);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
 }
 
 .project-section .group .headshot{
     flex: 2;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .project-section .group .headshot span{
     font-weight: bold;
     font-size: 23px;
-    padding: 0 25px;
+    overflow: auto;
     text-align: center;
     margin-bottom: 15px;
-}
-
-.project-section .group .headshot span:last-child{
-    font-weight: normal;
-    font-size: 18px;
-    padding: 0 0;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    text-align: center;
 }
 
 .project-section .boxes .group{
@@ -342,7 +344,12 @@ nav .right a:hover{
     margin-bottom: 5px;
 }
 
-.project-section .group .headshot a{
+.project-section .group .text dl{
+    list-style-position: inside;
+    word-break: break-word;
+}
+
+.project-section .group a{
     display: inline-block;
     padding: 5px 5px;
     border: 2px solid var(--link-color);
@@ -350,14 +357,7 @@ nav .right a:hover{
     margin-bottom: 10px;
     transition: .1s;
     overflow: auto;
-}
-
-.project-section .group{
-    border: 2px solid rgb(212, 212, 212);
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px rgb(150, 149, 149);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    margin-bottom: 20px;
+    margin-left: 25px;
 }
 
 .project-section .group:hover{
@@ -366,6 +366,7 @@ nav .right a:hover{
 }
 
 .project-section .group .headshot img{
+    margin-bottom: -10px;
     border-radius: 5px;
     text-align: center;
     width: 100%; 
