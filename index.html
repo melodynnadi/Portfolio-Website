@@ -245,81 +245,75 @@
 		</section>
 
          <!-- SECTION 5: Projects -->
-        <section id="Projects" class="project-section">
+         <section id="Projects" class="project-section">
             <h2>Projects</h2>
-
-            <div class="boxes">
-                <div class="group">
-                    <div class="headshot">
-                        <img src="Portfolio_page-0001.jpg" alt="jordantestimony.jpg">
-                        <br>
-                        <span>Personal Portfolio Website</span>
-                        <br>
+        
+            <div class="project-carousel">
+                <button class="carousel-arrow prev-arrow">&#10094;</button>
+                
+                <div class="project-cards">
+                    <div class="project-card">
+                        <div class="card-image">
+                            <img src="Portfolio_page-0001.jpg" alt="Portfolio Website">
+                        </div>
+                        <div class="card-content">
+                            <h3>Personal Portfolio Website</h3>
+                            <p>Built using HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+                            <div class="card-skills">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="https://github.com/melodynnadi/Portfolio-Website" target="_blank" rel="noopener noreferrer" class="card-link">
+                                <i class="fa-brands fa-github"></i>
+                                <span>Github</span>
+                            </a>
+                        </div>
                     </div>
         
-                    <div class="text">
-                        <p>This portfolio website showcases my skills, projects, and experiences as a computer science student. 
-                            Built using HTML, CSS, and JavaScript, the website provides a professional yet creative platform to highlight my achievements, 
-                            including academic accomplishments, work experience, and personal projects. 
-                            <br>
-                            <br>
-                            <dl>
-                                <li>Used HTML to build the fundamental structure of the website.</li>
-                                <li>Applied CSS for a modern, responsive, and visually appealing design, utilizing flexbox and grid for layout positioning.</li>
-                                <li>Integrated JavaScript to add interactivity, such as animations & smooth scrolling effects.</li>
-                                <li>Used VS Code as the primary code editor for writing, debugging, and managing the project efficiently.</li>
-                                <li>Managed source code using GitHub, tracking changes and maintaining version control for collaborative development.</li>
-                                <li>Hosted the website using Netlify, ensuring smooth deployment, automatic updates, and easy online access.</li>
-                            </dl>
-                            <br>
-                            This project helped me improve my skills in web development, frameworks and design.
-                        </p>
-
-                    </div>
-
-                    <a href="https://github.com/melodynnadi/Portfolio-Website" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-github"></i>
-                        <span>Github</span>
-                    </a>
-
-                </div>
-    
-                <div class="group">
-                    <div class="headshot">
-                        <img src="Picture1.png" alt="jennifer-davis.jpg">
-                        <br>
-                        <span>To-Do List Graphical User Interface</span>
-                        <br>
-                    </div>
-        
-                    <div class="text">
-                        <p>This project is a simple, user-friendly GUI application built using Python's CustomTkinter library. 
-                        The application allows users to manage their daily tasks by adding tasks to a list and deleting them once they are completed.
-                        This project is a simple, user-friendly GUI application built using Python's CustomTkinter library.
-                        The application features a minimalist design with buttons and a task list for easy task management. The development process included:
-                        <br>
-                        <br>
-                        
-                        <dl>
-                            <li>Used Python's CustomTkinter library for a modern and customizable GUI.</li>
-                            <li>Coded and tested using Visual Studio Code.</li>
-                            <li>Project is managed and stored on GitHub for collaboration and tracking changes.</li>
-                        </dl>
-                        <br>
-                        Through this project, I gained experience working with Graphical User Interfaces using python CustomTkinter.
-                        </p>
-
+                    <div class="project-card">
+                        <div class="card-image">
+                            <img src="Picture1.png" alt="To-Do List GUI">
+                        </div>
+                        <div class="card-content">
+                            <h3>To-Do List GUI</h3>
+                            <p>A user-friendly task management application built with Python's CustomTkinter library.</p>
+                            <div class="card-skills">
+                                <span>Python</span>
+                                <span>CustomTkinter</span>
+                                <span>GUI</span>
+                            </div>
+                            <a href="https://github.com/melodynnadi/To-Do-List-GUI" target="_blank" rel="noopener noreferrer" class="card-link">
+                                <i class="fa-brands fa-github"></i>
+                                <span>Github</span>
+                            </a>
+                        </div>
                     </div>
                     
-                    <a href="https://github.com/melodynnadi/To-Do-List-GUI" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-github"></i>
-                        <span>Github</span>
-                    </a>
-    
+                    <div class="project-card">
+                        <div class="card-image">
+                            <img src="weather-app.png" alt="Weather App">
+                        </div>
+                        <div class="card-content">
+                            <h3>Weather Forecast App</h3>
+                            <p>A sleek weather application that provides real-time weather data including temperature, humidity, and wind speed for any city worldwide.</p>
+                            <div class="card-skills">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>API Integration</span>
+                            </div>
+                            <a href="https://github.com/melodynnadi/Weather-Forecast" target="_blank" rel="noopener noreferrer" class="card-link">
+                                <i class="fa-brands fa-github"></i>
+                                <span>Github</span>
+                            </a>
+                        </div>
+                    </div>
+                    
                 </div>
-
+                
+                <button class="carousel-arrow next-arrow">&#10095;</button>
             </div>
-             
         </section>
 
          <!-- SECTION 6: Resume -->
@@ -503,6 +497,9 @@
          </footer>
         
     </main>
+
+<script src="script.js"></script>
+
     
 </body>
 </html>
