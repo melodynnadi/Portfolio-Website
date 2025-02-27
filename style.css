@@ -836,6 +836,10 @@ nav .right a:hover{
         margin-left: 25px;
     }
 
+    .project-section{
+        padding: 0 20px;
+    }
+
     .project-section .group .headshot span{
         padding: 0 0;;
     }
