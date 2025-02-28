@@ -350,7 +350,7 @@ nav .right a:hover{
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #8ca8f6;
     color: white;
     border: none;
     border-radius: 50%;
@@ -360,6 +360,10 @@ nav .right a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.carousel-arrow:hover{
+    background-color: #4a76ee;
 }
 
 .prev-arrow {
