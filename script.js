@@ -1,29 +1,18 @@
+// Highlight the header link for the section currently in view
 document.addEventListener('DOMContentLoaded', function() {
-    const projectCards = document.querySelector('.project-cards');
-    const prevArrow = document.querySelector('.prev-arrow');
-    const nextArrow = document.querySelector('.next-arrow');
-    
-    // Make sure z-index is properly set
-    document.querySelectorAll('.carousel-arrow').forEach(arrow => {
-        arrow.style.zIndex = "100";
-    });
-    
-    // Ensure proper event binding
-    prevArrow.addEventListener('click', function(e) {
-        e.preventDefault();
-        const cardWidth = document.querySelector('.project-card').offsetWidth + 30;
-        projectCards.scrollBy({
-            left: -cardWidth,
-            behavior: 'smooth'
+    const links = document.querySelectorAll('.site-nav a[href^="#"]');
+    const sections = Array.from(links)
+        .map(link => document.querySelector(link.getAttribute('href')))
+        .filter(Boolean);
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            links.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+            });
         });
-    });
-    
-    nextArrow.addEventListener('click', function(e) {
-        e.preventDefault();
-        const cardWidth = document.querySelector('.project-card').offsetWidth + 30;
-        projectCards.scrollBy({
-            left: cardWidth,
-            behavior: 'smooth'
-        });
-    });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+
+    sections.forEach(section => observer.observe(section));
 });

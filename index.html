@@ -3,630 +3,320 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melody Portfolio</title>
+    <title>Melody Nnadi</title>
+    <meta name="description" content="Melody Nnadi is a software developer at Elliott Electric Supply and the founder of RideAlong, a rideshare app for college students.">
+    <link rel="icon" href="ridealong-logo.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- NAVBAR -->
-     <header>
-        <nav>
-            <div class="left">
-                <a href="/">Melody Nnadi</a>
+
+<header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Melody Nnadi, back to top">MN</a>
+    <nav class="site-nav">
+        <a href="#ridealong">RideAlong</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="pill" href="MyResume.pdf" target="_blank">Resume ↓</a>
+    </nav>
+</header>
+
+<main id="top" class="content">
+
+    <!-- HERO + BENTO -->
+    <section class="hero">
+        <div class="hero-intro">
+            <h1>Melody Nnadi</h1>
+            <p>Software Developer · Founder of <a href="#ridealong">RideAlong</a></p>
+        </div>
+
+        <div class="bento">
+            <a class="tile tile-feature" href="#ridealong">
+                <div class="tile-feature-img">
+                    <img src="ridealong-riders.jpg" alt="Three students sharing a RideAlong trip">
+                </div>
+                <div class="tile-feature-body">
+                    <div class="brand">
+                        <img src="ridealong-logo.jpg" alt="">
+                        <div>
+                            <strong>RideAlong</strong>
+                            <span>Founder &amp; Software Developer · May 2025 - present</span>
+                        </div>
+                    </div>
+                    <span class="status"><span class="dot"></span>Live on the App Store</span>
+                </div>
+            </a>
+
+            <div class="tile-photo">
+                <img src="profilepicture.jpg" alt="Melody Nnadi">
+                <div class="badge"><span class="dot"></span>Open to SWE roles</div>
             </div>
-            <div class="right">
-                <a href="https://github.com/melodynnadi" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-github"></i>
-                    <span>Github</span>
-                </a>
-    
-                <a href="https://www.linkedin.com/in/melodynnadi/" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <span>Linkedin</span>
-                </a>
-    
-                <a href="mailto:melodynnadi2@gmail.com" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>Email</span>
-                </a>
-            </div>
-        </nav>
-     </header>
 
-    <main>
-        <!-- SECTION 1: Hero -->
-         <section class="hero-section">
-            <div class="text">
-                <h2>Hi, I'm Melody👋</h2>
-                <p>I'm a passionate Computer Science student currently studying at the University of Texas at Tyler, 
-                    with a strong interest in software development, cybersecurity, and artificial intelligence. 
-                    I enjoy solving complex problems, building innovative solutions, and collaborating on exciting tech projects. 
-                    My goal is to create impactful software that enhances user experiences and security.
-                </p>
-                <div class="links">
-
-                    <a href="#AboutMe">
-                        <i class="fa-solid fa-address-card"></i>
-                        <span>About Me</span>
-                    </a>
-
-                    <a href="#Skills">
-                        <i class="fa-solid fa-code"></i>
-                        <span>Tech Stack</span>
-                    </a>
-
-                    <a href="#Experience">
-                        <i class="fa-solid fa-medal"></i>
-                        <span>Experience</span>
-                    </a>
-
-                    <a href="#Projects">
-                        <i class="fa-regular fa-lightbulb"></i>
-                        <span>Projects</span>
-                    </a>
-
-                    <a href="#Resume">
-                        <i class="fa-solid fa-briefcase"></i>
-                        <span>Resume</span>
-                    </a>
-
-                    <a href="#Education">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <span>Education</span>
-                    </a>
-
-                    <a href="#Testimony">
-                        <i class="fa-solid fa-pen"></i>
-                        <span>Testimony</span>
-                    </a>
-
-                    <a href="#Contact">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>Contact</span>
-                    </a>
+            <div class="tile">
+                <span class="eyebrow">Currently</span>
+                <div class="tile-row">
+                    <img class="logo-round" src="elliott-logo.png" alt="">
+                    <div>
+                        <strong>Software Developer</strong>
+                        <span>Elliott Electric Supply</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="headshot">
-                <img src="profilepicture.jpg" alt="LinkedinProfile.jpeg">
-            </div>
-         </section>
-
-         <!-- SECTION 2: About Me -->
-         <section id="AboutMe" class="about-section">
-            <h2>About Me</h2>
-
-            <div class="text">
-                I love messing with code and working on projects with colleagues, constantly exploring new ways to solve problems and build cool things.
-                I have had the opportunity to work with professors at the University of Texas at Tyler and it has been a great experience, and I'm eager to collaborate with other professionals to keep growing my skills.
-                <br>
-                <br> 
-                I'm a huge sports fan, especially soccer, and I’m a passionate supporter of FC Barcelona. 
-                When I’m not coding, you’ll probably find me at the gym, playing soccer, table tennis, or pickleball. 
-                I also have a deep appreciation for music and enjoy listening to jazz, Afrobeat, reggae, and country. 
-                <br>
-                <br>
-                I love exploring new things, staying curious, and always looking for ways to grow both personally and professionally.
-                If you're into music, you can check out some of my playlists on Spotify! And if you're up for a soccer game, add me on the Plei app, and let's play together!
-
-                <div class="links">
-
-                    <a href="https://open.spotify.com/user/31dcoweurqd3si62cvdg4qm7eati?si=4IUzwm_WSOe0w6orEmkYkQ" target="_blank">
-                        <i class="fa-brands fa-spotify"></i>
-                        <span>Spotify</span>
-                    </a>
-    
-                    <a href="https://www.pleiapp.com/?trk=public_post-text" target="_blank">
-                        <i class="fa-solid fa-futbol"></i>
-                        <span>Plei</span>
-                    </a>
-    
-                </div>
-
-            </div>
-            
-         </section>
-
-         <!-- SECTION 3: Skills -->
-         <section id="Skills" class="skills-section">
-            <h2>My Tech Stack</h2>
-            <div class="text">
-                
-            </div>
-
-            <div class="cells">
-                <div class="cell">
-                    <img src="java.png" alt="java.jpg">
-                    <span></span>
-                </div>
-    
-                <div class="cell">
-                    <img src="js.png" alt="js.jpg">
-                    <span></span>
-                </div>
-    
-                <div class="cell">
-                    <img src="mysql.png" alt="mysql.jpg">
-                    <span></span>
-                </div>
-    
-                <div class="cell">
-                    <img src="html.png" alt="html.jpg">
-                    <span></span>
-                </div>
-    
-                <div class="cell">
-                    <img src="css-3.png" alt="css-3.jpg">
-                    <span></span>
-                </div>
-    
-                <div class="cell">
-                    <img src="python.png" alt="python.jpg">
-                    <span></span>
-                </div>
-
-                <div class="cell">
-                    <img src="github.png" alt="github.jpg">
-                    <span></span>
-                </div>
-
-                <div class="cell">
-                    <img src="tableu.png" alt="tableu.jpg">
-                    <span></span>
-                </div>
-            </div>
-            
-         </section>
-
-         <!-- SECTION 4: Experience -->
-         <section id="Experience" class="experience-section">
-			
-			<h2>Experience</h2>
-
-			<div class="contents">
-
-                <div class="box">
-                    <div class="box-content">
-                        <div class="box-image">
-                            <img src="RideAlong_Logo.png">
-                        </div>
-                        <div class="box-details">
-                            <h4>Aug 2025 - Present</h4>
-                            <h3>Founder & CEO</h3>
-                            <span>RideAlong </span>
-                            <br>
-                            <p>Founded a long-distance ridesharing platform for university students; led product strategy, architecture, and
-                                development. <br>
-                                Built a multi-platform ecosystem (Rider, Driver, Admin, Web) using React, React Native, Firebase, and Stripe.<br>
-                                Implemented verification systems including document OCR, license/insurance checks, student email validation, and risk
-                                flags.<br>
-                                Developed end-to-end payments, driver payouts, authentication, and automated email/push notification flows.<br>
-                                Oversaw UI/UX, roadmap planning, branding, and beta testing with students across multiple campuses.</p>
-                        </div>
-                    </div>
-                </div>
-				
-				<div class="box">
-                    <div class="box-content">
-                        <div class="box-image">
-                            <img src="nacspace_logo.jpg">
-                        </div>
-                        <div class="box-details">
-                            <h4>June 2025 - Present</h4>
-                            <h3>Sofware Developer Intern</h3>
-                            <span>NacSpace</span>
-                            <br>
-                            <p>As a Software Developer Intern on the mobile team at NacSpace, I assist in developing, testing, and maintaining mobile applications. I contribute to front-end development (primarily using C#), collaborate with team members on feature design, and help troubleshoot and resolve software issues. The role gives me hands-on experience with mobile app development workflows, version control, and agile team practices.</p>
-                        </div>
-                    </div>
-                </div>
-                
-				<div class="box">
-                    <div class="box-content">
-                        <div class="box-image">
-                            <img src="reality_ai_labs_logo.jpg">
-                        </div>
-                        <div class="box-details">
-                            <h4>Feb 2025 - May 2025</h4>
-                            <h3>Software Developer Intern</h3>
-                            <span>Reality AI Lab</span>
-                            <br>
-                            <dl>
-                                Building and refining AI-powered education and career tools using ReactJS, Node.js, and Python<br>
-                                Deploying applications on Google Cloud Run and managing Firestore, Firebase Realtime DB, and Redis for scalable AI workflows<br>
-                                Conducting comprehensive testing, resolving bugs, and monitoring performance using LogRocket and Log Explorer.<br>
-                                Working with cross-functional teams on AI solutions, maintained source code, and contributed to CI/CD pipelines using GitHub
-                                    Actions
-                                
-                            </dl>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <div class="box-content">
-                        <div class="box-image">
-                            <img src="tonepromotion.jpg">
-                        </div>
-                        <div class="box-details">
-                            <h4>Mar 2025 - Present</h4>
-                            <h3>Web Developer</h3>
-                            <span>Tone Promotions</span>
-                            <br>
-                            <dl>
-                                Designed and developed an interactive website for Tone Promotions ensuring a visually appealing and user-friendly experience<br>
-                                Implemented an online ticketing system with secure payment integration, allowing users to purchase event tickets seamlessly<br>
-                                Developed a dynamic event management feature that displays upcoming events and updates users on event status in real-time.
-                            </dl>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="box">
-                    <div class="box-content">
-                        <div class="box-image">
-                            <img src="TAMUT.png">
-                        </div>
-                        <div class="box-details">
-                            <h4>June 2023 - July 2024</h4>
-                            <h3>Resident Assistant</h3>
-                            <span>Texas A&M University Texarkana</span>
-                            <br>
-                            <dl>
-                                Built personal relationships with residents and fostered a positive community by resolving conflicts and facilitating group dynamics.<br>
-                                Ensured the safety and security of the residence hall by conducting rounds and enforcing university policies<br>
-                                Planned and executed community events to promote engagement and support residents' academic and personal growth
-                            </dl>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="box">
-                    <div class="box-content">
-                        <div class="box-image">
-                            <img src="rccg_logo.jpg">
-                        </div>
-                        <div class="box-details">
-                            <h4>January 2022 - July 2022</h4>
-                            <h3>IT Service Desk Assistant</h3>
-                            <span>Redeemed Christian Church of God</span>
-                            <br>
-                            <dl>
-                                Provided technical support to church staff and members, troubleshooting hardware, software, and network issues.<br>
-                                Managed and maintained IT systems, ensuring smooth operation during services and events<br>
-                                Assisted in setting up multimedia equipment for live streaming and presentations
-                            </dl>
-                        </div>
-                    </div>
-                </div>
-                
-			</div>
-		</section>
-
-         <!-- SECTION 5: Projects -->
-         <section id="Projects" class="project-section">
-            <h2>Projects</h2>
-        
-            <div class="project-carousel">
-                <button class="carousel-arrow prev-arrow">&#10094;</button>
-                
-                <div class="project-cards">
-
-                    <div class="project-card">
-                        <div class="card-image">
-                            <img src="maddierecipes.png" alt="Portfolio Website">
-                        </div>
-                        <div class="card-content">
-                            <h3>Maddie's Recipes</h3>
-                            <p>The Maddie’s Recipes website is a user-friendly and visually appealing platform designed for food lovers of all skill levels.</p>
-                            <div class="card-skills">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>ReactJS</span>
-                            </div>
-                            <a href="https://github.com/melodynnadi/Maddie-s-Recipes" target="_blank" rel="noopener noreferrer" class="card-link">
-                                <i class="fa-brands fa-github"></i>
-                                <span>Github</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="card-image">
-                            <img src="tonepic.png" alt="Portfolio Website">
-                        </div>
-                        <div class="card-content">
-                            <h3>Tone Promotions Website</h3>
-                            <p>A user-friendly and interactive website built for Tone promotions, a small party hosting business located in Tyler, TX</p>
-                            <div class="card-skills">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <a href="https://github.com/melodynnadi/Tone" target="_blank" rel="noopener noreferrer" class="card-link">
-                                <i class="fa-brands fa-github"></i>
-                                <span>Github</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="card-image">
-                            <img src="Portfolio_page-0001.jpg" alt="Portfolio Website">
-                        </div>
-                        <div class="card-content">
-                            <h3>Personal Portfolio Website</h3>
-                            <p>Built using HTML, CSS, and JavaScript to showcase my skills and projects.</p>
-                            <div class="card-skills">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <a href="https://github.com/melodynnadi/Portfolio-Website" target="_blank" rel="noopener noreferrer" class="card-link">
-                                <i class="fa-brands fa-github"></i>
-                                <span>Github</span>
-                            </a>
-                        </div>
-                    </div>
-        
-                    <div class="project-card">
-                        <div class="card-image">
-                            <img src="Picture1.png" alt="To-Do List GUI">
-                        </div>
-                        <div class="card-content">
-                            <h3>To-Do List GUI</h3>
-                            <p>A user-friendly task management application built with Python's CustomTkinter library.</p>
-                            <div class="card-skills">
-                                <span>Python</span>
-                                <span>CustomTkinter</span>
-                                <span>GUI</span>
-                            </div>
-                            <a href="https://github.com/melodynnadi/To-Do-List-GUI" target="_blank" rel="noopener noreferrer" class="card-link">
-                                <i class="fa-brands fa-github"></i>
-                                <span>Github</span>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="card-image">
-                            <img src="weather-app.png" alt="Weather App">
-                        </div>
-                        <div class="card-content">
-                            <h3>Weather Forecast App</h3>
-                            <p>A sleek weather application that provides real-time weather data including temperature, humidity, and wind speed for any city worldwide.</p>
-                            <div class="card-skills">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>API Integration</span>
-                            </div>
-                            <a href="https://github.com/melodynnadi/Weather-Forecast" target="_blank" rel="noopener noreferrer" class="card-link">
-                                <i class="fa-brands fa-github"></i>
-                                <span>Github</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="card-image">
-                            <img src="MeloDulator.png" alt="Weather App">
-                        </div>
-                        <div class="card-content">
-                            <h3>MeloDulator</h3>
-                            <p>It features a clean, modern design with a functional interface that performs basic arithmetic operations.</p>
-                            <div class="card-skills">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>DOM Manipulation</span>
-                            </div>
-                            <a href="https://github.com/melodynnadi/MeloDulator" target="_blank" rel="noopener noreferrer" class="card-link">
-                                <i class="fa-brands fa-github"></i>
-                                <span>Github</span>
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-                
-                <button class="carousel-arrow next-arrow">&#10095;</button>
-            </div>
-        </section>
-
-         <!-- SECTION 6: Resume -->
-         <section id="Resume" class="resume-section">
-            <h2>Resume</h2>
-
-            <div class="resume">
-                <a href="MyResume.pdf" target="_blank">
-                    <img src="Screenshot 2025-11-16 214743.png" alt="resumeportfolio.jpg">
-                </a>
-            </div>
-
-         </section>
-
-         <!-- SECTION 7: Education -->
-         <section id="Education" class="education-section">
-            <h2>Education</h2>
-
-            <div class="group">
-                <div class="school">
-                    <img src="UTTyler.png">
-                    <br>
-                    <h3>University of Texas at Tyler</h3>
-                    <br>
-                    <span><b>Location:</b> Tyler, TX</span>
-                    <br>
-                    <span><b>Years Attended:</b> Jan 2025 - present</span>
-                    <br>
-                    <span><b>Degree:</b> Bachelors in Computer Science</span>
-                    <br>
-                    <span><b>Highlight:</b> Active member of NSBE and African Students Organization</span>
+            <div class="tile">
+                <span class="eyebrow">Built with</span>
+                <div class="tile-stack">
+                    <span>React Native</span>
+                    <span>TypeScript</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>C#</span>
+                    <span>.NET MAUI</span>
+                    <span>Python</span>
+                    <span>Swift</span>
+                    <span>SQL</span>
+                    <span>Firebase</span>
+                    <span>Google Cloud</span>
+                    <span>Stripe</span>
                 </div>
             </div>
 
-            <div class="group">
-                <div class="school">
-                    <img src="TAMUT.png">
-                    <br>
-                    <h3>Texas A&M University Texarkana</h3>
-                    <br>
-                    <span><b>Location:</b> Texarkana, TX</span>
-                    <br>
-                    <span><b>Years Attended:</b> Sep 2022- Dec 2024</span>
-                    <br>
-                    <span><b>Degree:</b> Bachelors in Computer Science</span>
-                    <br>
-                    <span><b>Highlight:</b> Served as Vice president of African Student Association</span>
+            <div class="tile">
+                <span class="eyebrow">Studying</span>
+                <div class="tile-school">
+                    <div class="tile-row">
+                        <img class="logo-square" src="westcliff-logo.png" alt="">
+                        <div>
+                            <strong>M.S. Computer Science</strong>
+                            <span>Westcliff University · 2026 - present</span>
+                        </div>
+                    </div>
+                    <div class="tile-row">
+                        <img class="logo-square" src="uttyler-logo.svg" alt="">
+                        <div>
+                            <strong>B.S. Computer Science</strong>
+                            <span>UT Tyler · 2026 · GPA 3.5</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="group">
-                <div class="school">
-                    <img src="ECLA.png">
-                    <br>
-                    <h3>Elyon College & Leadership Academy</h3>
-                    <br>
-                    <span><b>Location:</b> Ogun State, Nigeria</span>
-                    <br>
-                    <span><b>Years Attended:</b> Aug 2016 - Jun 2022</span>
-                    <br>
-                    <span><b>Degree:</b> High School Diploma</span>
-                    <br>
-                    <span><b>Highlight:</b> Graduated as Headboy and Valedictorian</span>
+            <a class="tile tile-cta" href="mailto:melodynnadi2@gmail.com">
+                <span class="eyebrow">Say hello</span>
+                <strong>melodynnadi2<br>@gmail.com →</strong>
+            </a>
+        </div>
+    </section>
+
+    <!-- RIDEALONG -->
+    <section id="ridealong" class="ridealong">
+        <div class="ridealong-intro">
+            <span class="eyebrow">01 · RideAlong</span>
+            <h2>Rides home with students, not strangers.</h2>
+            <p>I founded RideAlong so college students can find or offer rides with other verified students heading the same way and split the cost. I lead product, architecture and engineering across the iOS app, the web app and the backend.</p>
+            <div class="ridealong-links">
+                <a class="pill pill-accent" href="https://apps.apple.com/us/app/ridealong-mobile-app/id6793355660" target="_blank" rel="noopener noreferrer">Download on iOS</a>
+                <a class="pill" href="https://ridealongapp.com" target="_blank" rel="noopener noreferrer">ridealongapp.com ↗</a>
+            </div>
+        </div>
+        <div class="pillars">
+            <div class="pillar">
+                <strong>iOS app</strong>
+                <span>React Native, Expo and TypeScript. Ride posting, booking, seat management, navigation and in-app chat.</span>
+            </div>
+            <div class="pillar">
+                <strong>Verification</strong>
+                <span>University email checks, document uploads, and license and insurance validation for drivers.</span>
+            </div>
+            <div class="pillar">
+                <strong>Payments</strong>
+                <span>Stripe Connect and Apple Pay for rider payments, platform fees and automated driver payouts.</span>
+            </div>
+            <div class="pillar">
+                <strong>Backend</strong>
+                <span>Node.js API on Render handling payments, document OCR, phone verification and notifications.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+        <span class="eyebrow">02 · Experience</span>
+        <div class="jobs">
+            <div class="job">
+                <div class="job-top">
+                    <img class="logo-round" src="elliott-logo.png" alt="">
+                    <span class="job-date">JUN 2025 - PRESENT</span>
+                </div>
+                <div class="job-title">
+                    <strong>Software Developer</strong>
+                    <span>Elliott Electric Supply</span>
+                </div>
+                <p>Started as an intern and moved into a full-time developer role. Develop and maintain production mobile apps used across the company with C#, .NET MAUI and SQL, migrated offline workflows to API-driven services, and keep CI/CD releases running.</p>
+            </div>
+
+            <div class="job">
+                <div class="job-top">
+                    <img class="logo-round" src="ridealong-logo.jpg" alt="">
+                    <span class="job-date">MAY 2025 - PRESENT</span>
+                </div>
+                <div class="job-title">
+                    <strong>Founder &amp; Software Developer</strong>
+                    <span>RideAlong</span>
+                </div>
+                <p>Built and launched a full-stack rideshare platform for university students, including trip booking, real-time updates, push notifications, Stripe Connect and Apple Pay payments, and student and driver verification.</p>
+            </div>
+
+            <div class="job">
+                <div class="job-top">
+                    <img class="logo-round" src="reality_ai_labs_logo.jpg" alt="">
+                    <span class="job-date">JAN - MAY 2025</span>
+                </div>
+                <div class="job-title">
+                    <strong>Software Developer Intern</strong>
+                    <span>Reality AI Lab</span>
+                </div>
+                <p>Built AI education and career tools with React, Node.js and Python. Deployed cloud microservices on Google Cloud Run with Firebase, Firestore and Redis, and monitored production with LogRocket and Google Cloud tools.</p>
+            </div>
+
+            <div class="job">
+                <div class="job-top">
+                    <span class="job-mark">MN</span>
+                    <span class="job-date">MAR 2025 - PRESENT</span>
+                </div>
+                <div class="job-title">
+                    <strong>Web Developer</strong>
+                    <span>Freelance</span>
+                </div>
+                <p>Design and build websites for small businesses, including event listings and online ticketing for Tone Promotions, a booking site for a photographer, and a site for a branding agency.</p>
+            </div>
+        </div>
+        <div class="earlier">
+            <span>Leadership:</span>
+            <span>Resident Assistant, UT Tyler Residence Life (2025 - 2026)</span>
+            <span>Assistant President, International Student Organization, Texas A&amp;M University-Texarkana (2023 - 2024)</span>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="section-head">
+            <span class="eyebrow">03 · Projects</span>
+            <a href="https://github.com/melodynnadi" target="_blank" rel="noopener noreferrer">More on GitHub ↗</a>
+        </div>
+        <div class="project-list">
+            <a class="project" href="https://apps.apple.com/us/app/ridealong-mobile-app/id6793355660" target="_blank" rel="noopener noreferrer">
+                <div class="project-name"><strong>RideAlong iOS App</strong><span>App Store</span></div>
+                <span class="project-desc">Rider and driver app with ride posting, trip discovery, booking, seat management, navigation, chat and Apple Pay.</span>
+                <div class="project-meta">
+                    <span class="project-tags">REACT NATIVE · TYPESCRIPT · STRIPE</span>
+                    <div class="project-thumb"><img src="ridealong-app.jpg" alt=""></div>
+                </div>
+            </a>
+
+            <a class="project" href="https://ridealongapp.com" target="_blank" rel="noopener noreferrer">
+                <div class="project-name"><strong>RideAlong Web App</strong><span>ridealongapp.com</span></div>
+                <span class="project-desc">RideAlong on the web: ride postings and requests, student verification, messaging, trip tracking and an AI help assistant.</span>
+                <div class="project-meta">
+                    <span class="project-tags">JAVASCRIPT · FIREBASE · STRIPE</span>
+                    <div class="project-thumb"><img src="ridealong-web.jpg" alt=""></div>
+                </div>
+            </a>
+
+            <a class="project" href="https://fotosxsofia.com" target="_blank" rel="noopener noreferrer">
+                <div class="project-name"><strong>fotosxs0fia</strong><span>Client site</span></div>
+                <span class="project-desc">Portfolio and booking site for a photographer. Clients pick a package and add-ons, choose a date and request a booking.</span>
+                <div class="project-meta">
+                    <span class="project-tags">HTML · CSS · JS</span>
+                    <div class="project-thumb"><img src="fotosxsofia.jpg" alt=""></div>
+                </div>
+            </a>
+
+            <a class="project" href="https://github.com/melodynnadi/TotalImage" target="_blank" rel="noopener noreferrer">
+                <div class="project-name"><strong>Total Image</strong><span>Client site</span></div>
+                <span class="project-desc">Site for a branding and marketing agency, with service pricing, an FAQ, and quote and consultation forms.</span>
+                <div class="project-meta">
+                    <span class="project-tags">HTML · CSS · JS</span>
+                    <div class="project-thumb"><img src="totalimage.jpg" alt=""></div>
+                </div>
+            </a>
+
+            <a class="project" href="https://github.com/melodynnadi/Toni-s-Blog" target="_blank" rel="noopener noreferrer">
+                <div class="project-name"><strong>Blog Platform</strong><span>Client site</span></div>
+                <span class="project-desc">Blog with a separate admin app for writing and publishing posts in Markdown, backed by Firebase.</span>
+                <div class="project-meta">
+                    <span class="project-tags">NEXT.JS · TYPESCRIPT · FIREBASE</span>
+                    <div class="project-thumb cover">Blog</div>
+                </div>
+            </a>
+
+            <div class="project">
+                <div class="project-name"><strong>ProdigyPM</strong><span>Personal project</span></div>
+                <span class="project-desc">Mobile app that turns product ideas into PRDs, user stories, prioritized backlogs, personas and sprint plans, with real-time team collaboration.</span>
+                <div class="project-meta">
+                    <span class="project-tags">REACT NATIVE · FIREBASE · OPENAI</span>
+                    <div class="project-thumb cover">PM</div>
                 </div>
             </div>
-            
-         </section>
 
-         <!-- SECTION 8: Testimony -->
-         <section id="Testimony" class="testimony-section">
-            <h2>Testimony</h2>
-
-            <div class="boxes">
-
-                <div class="group">
-                    <div class="headshot">
-                        <img src="jordan_testimony.jpg" alt="jordantestimony.jpg">
-                        <br>
-                        <span>Jordan Adams</span>
-                        <br>
-                        <span>Mechanical Engineer @Industrial Paper</span>
-    
-                        <br>
-    
-                        <a href="https://www.linkedin.com/in/jordandadams/" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
-                            <span>Linkedin</span>
-                        </a>
-                    </div>
-        
-                    <div class="text">
-                        <p>"Melody is a dedicated and detail-oriented developer with a strong work ethic. 
-                            His problem-solving abilities and technical expertise make him a great asset to any team!"
-                        </p>
-                    </div>
-    
-                    
-    
+            <div class="project">
+                <div class="project-name"><strong>Smart Inventory Tracking</strong><span>Personal project</span></div>
+                <span class="project-desc">Tracks stock movement, check-ins and check-outs in real time with RFID and barcode scanning, plus audit logs and discrepancy alerts.</span>
+                <div class="project-meta">
+                    <span class="project-tags">PYTHON · FLASK · SQL</span>
+                    <div class="project-thumb cover">RFID</div>
                 </div>
-    
-                <div class="group">
-                    <div class="headshot">
-                        <img src="jennifer-davis.jpg" alt="jennifer-davis.jpg">
-                        <br>
-                        <span>Jennifer Davis</span>
-                        <br>
-                        <span>Director of Community Engagement @Texas A&M University Texarkana</span>
-    
-                        <br>
-    
-                        <a href="https://www.linkedin.com/in/dr-jennifer-davis/" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
-                            <span>Linkedin</span>
-                        </a>
-                    </div>
-        
-                    <div class="text">
-                        <p>"He has the maturity, kindness, and professionalism
-                            to be a great asset to any program. I feel that he will succeed in teamwork and efficiency with any task that is
-                            presented to him. It would be great to see Melody interact with the community that he has become passionate
-                            about."
-                        </p>
-                    </div>
-    
+            </div>
+        </div>
+    </section>
+
+    <!-- REFERENCES -->
+    <section class="quotes">
+        <figure class="quote">
+            <blockquote>“Melody is a dedicated and detail-oriented developer with a strong work ethic. His problem-solving abilities and technical expertise make him a great asset to any team!”</blockquote>
+            <figcaption>
+                <img src="jordan_testimony.jpg" alt="Jordan Adams">
+                <div>
+                    <a href="https://www.linkedin.com/in/jordandadams/" target="_blank" rel="noopener noreferrer">Jordan Adams</a>
+                    <span>Mechanical Engineer, Industrial Paper</span>
                 </div>
+            </figcaption>
+        </figure>
 
-            </div>
-            
-         </section>
+        <figure class="quote">
+            <blockquote>“He has the maturity, kindness, and professionalism to be a great asset to any program.”</blockquote>
+            <figcaption>
+                <img src="jennifer-davis.jpg" alt="Dr. Jennifer Davis">
+                <div>
+                    <a href="https://www.linkedin.com/in/dr-jennifer-davis/" target="_blank" rel="noopener noreferrer">Dr. Jennifer Davis</a>
+                    <span>Director of Community Engagement, Texas A&amp;M University-Texarkana</span>
+                </div>
+            </figcaption>
+        </figure>
+    </section>
 
-         <!-- SECTION 9: Contact -->
-         <section id="Contact" class="contact-section">
-            <h2>Let's Connect!</h2>
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2>Let's build something <em>together.</em></h2>
+        <p>I'm open to software engineering roles and to conversations about RideAlong.</p>
+        <div class="contact-links">
+            <a class="pill pill-accent" href="mailto:melodynnadi2@gmail.com">Email me</a>
+            <a class="pill" href="https://www.linkedin.com/in/melodynnadi/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="pill" href="https://github.com/melodynnadi" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+    </section>
 
-            <div class="group">
-                <form action="https://formspree.io/f/mldgwlgb" method="POST">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" type="text" name="name" placeholder="Your Name" required>
-
-                    <label for="email">Email</label>
-                    <input id="email" type="email" name="email" placeholder="Your Email" required>
-
-                    <label for="message">Message</label>
-                    <textarea name="message" placeholder="Your Message" required id="message" rows="5" cols="20"></textarea>
-
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-
-         </section>
-
-         <!-- SECTION 10: Footer -->
-         <footer class="footer-section">
-            <div class="contacts">
-                <a href="mailto:melodynnadi2@gmail.com" target="_blank">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>melodynnadi2@gmail.com</span>
-                </a>
-
-                <span id="descriptions">   |   </span>
-
-                <a href="tel:+19032446591" target="_blank">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>(903) 244-6591</span>
-                </a>
-
-                <span id="descriptions">   |   </span>
-
-                <a href="https://github.com/melodynnadi" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                    <span>melodynnadi</span>
-                </a>
-
-                <span id="descriptions">   |   </span>
-
-                <a href="https://www.linkedin.com/in/melodynnadi/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <span>Linkedin</span>
-                </a>
-            </div>
-         </footer>
-        
-    </main>
+    <footer class="footer">
+        <span>© 2026 Melody Nnadi</span>
+        <span>(903) 244-6591</span>
+    </footer>
+</main>
 
 <script src="script.js"></script>
-
-    
 </body>
 </html>
